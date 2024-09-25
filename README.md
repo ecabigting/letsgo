@@ -5,6 +5,8 @@ These projects are also submitted to <a href="https://roadmap.sh/projects/task-t
 
 ## todocli
 
+![todocli](/todocli/src.png)
+
 ### Installation 
 Clone this repo and cd into the folder
 ```zsh
@@ -18,6 +20,10 @@ $ go run ./ -help
 
 
 ## ghactivitycli
+
+![ghactivitycli](/ghactivitycli/src.png)
+
+### Installation
 Clone this repo and cd into the folder
 ```zsh
 $ git clone https://github.com/ecabigting/letsgo.git

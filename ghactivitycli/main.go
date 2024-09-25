@@ -19,7 +19,6 @@ func main() {
 
 	// print the input
 	fmt.Printf("You typed:%s\n", input)
-	fmt.Println("WEWEW:", os.Args[0])
 
 	// build the url request with the provided gh username
 	url := "https://api.github.com/users/" + input + "/events"
@@ -48,20 +47,9 @@ func main() {
 		log.Fatalf("Error unmarshalling JSON: %v", err)
 	}
 
-	// fmt.Println(">>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>")
-	// fmt.Println(">>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>")
-	// fmt.Println(string(body))
-	//
-	// fmt.Println(">>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>")
-	// fmt.Println(">>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>")
-
 	// build the activity output
 	var activities []Activity
 	for _, event := range events {
-		// fmt.Println("---------------------")
-		// fmt.Printf("Event: %+v\n", event.Type)
-		// fmt.Printf("Event: %+v\n", event.Repo)
-
 		// check if repo and type exist in the activities slice
 		exists := false
 		for index, activity := range activities {
