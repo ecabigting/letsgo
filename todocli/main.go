@@ -2,11 +2,15 @@ package main
 
 func main() {
 	todos := Todos{}
-	todos.add("Create go todo cli")
-	todos.add("Create go web api")
-	todos.add("Create go http server")
-	todos.toggle(0)
-	todos.toggle(1)
-	todos.toggle(2)
+	// Load the file from the filesystem
+	// with filename todos.json
+	storage := NewStorage[Todos]("todos.json")
+	// Load the file data and
+	// reference it into our todos
+	// declared at line 5
+	storage.Load(&todos)
+	commands := NewCommandFlags()
+	commands.Execute(&todos)
 	todos.print()
+	storage.Save(todos)
 }
