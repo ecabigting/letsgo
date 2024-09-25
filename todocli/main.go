@@ -9,8 +9,11 @@ func main() {
 	// reference it into our todos
 	// declared at line 5
 	storage.Load(&todos)
+	if len(todos) <= 0 {
+		todos.InitTodoFile()
+	}
 	commands := NewCommandFlags()
 	commands.Execute(&todos)
-	todos.print()
+	// todos.print()
 	storage.Save(todos)
 }

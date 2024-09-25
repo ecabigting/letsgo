@@ -35,10 +35,12 @@ func (cf *CommandFlags) Execute(todos *Todos) {
 		todos.print()
 	case cf.Add != "":
 		todos.add(cf.Add)
+		// add call print to show the updated todos
+		todos.print()
 	case cf.Edit != "":
 		parts := strings.SplitN(cf.Edit, ":", 2)
 		if len(parts) != 2 {
-			fmt.Print("Invalid edit arguments, Use id:title")
+			fmt.Println("Invalid edit arguments, Use id:title")
 			os.Exit(1)
 		}
 		index, err := strconv.Atoi(parts[0])
@@ -47,10 +49,13 @@ func (cf *CommandFlags) Execute(todos *Todos) {
 			os.Exit(1)
 		}
 		todos.edit(index, parts[1])
+		todos.print()
 	case cf.Toggle != -1:
 		todos.toggle(cf.Toggle)
+		todos.print()
 	case cf.Del != -1:
 		todos.delete(cf.Del)
+		todos.print()
 	default:
 		fmt.Println("Invalid command!")
 
