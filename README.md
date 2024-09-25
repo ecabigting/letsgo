@@ -3,7 +3,7 @@ collection of go projects I created to refresh my skills in go
 
 These projects are also submitted to <a href="https://roadmap.sh/projects/task-tracker">roadmap.sh</a>
 
-## todocli
+## 📋 todocli
 
 ![todocli](/todocli/src.png)
 
@@ -19,7 +19,7 @@ $ go run ./ -help
 ```
 
 
-## ghactivitycli
+## 🚣 ghactivitycli
 
 ![ghactivitycli](/ghactivitycli/src.png)
 
