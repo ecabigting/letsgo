@@ -33,3 +33,20 @@ Run with commands
 ```go
 $ go run ./ <github username>
 ```
+
+## 💰 expensescli
+
+![expensescli](/expensescli/src.png)
+
+### Installation
+Clone this repo and cd into the folder
+```zsh
+$ git clone https://github.com/ecabigting/letsgo.git
+$ cd expensescli
+```
+Check available commands with:
+```go
+$ go run ./ -help
+```
+
+
