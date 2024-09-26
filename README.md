@@ -1,7 +1,5 @@
 # letsgo
-collection of go projects I created to refresh my skills in go
-
-These projects are also submitted to <a href="https://roadmap.sh/projects/github-user-activity">roadmap.sh</a>
+Collection of go projects I created to refresh my skills in go
 
 ## 📋 todocli
 
@@ -18,6 +16,7 @@ Check available commands by using:
 $ go run ./ -help
 ```
 
+This project was submitted to <a href="https://roadmap.sh/projects/task-tracker">roadmap.sh</a>
 
 ## 🚣 ghactivitycli
 
@@ -34,6 +33,8 @@ Run with commands
 $ go run ./ <github username>
 ```
 
+This project was submitted to <a href="https://roadmap.sh/projects/github-user-activity">roadmap.sh</a>
+
 ## 💰 expensescli
 
 ![expensescli](/expensescli/src.png)
@@ -48,5 +49,7 @@ Check available commands with:
 ```go
 $ go run ./ -help
 ```
+
+This project was submitted to <a href="https://roadmap.sh/projects/expense-tracker">roadmap.sh</a>
 
 
