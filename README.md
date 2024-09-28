@@ -13,7 +13,7 @@ $ cd numberguessinggamecli
 ```
 Check available commands by using:
 ```bash
-$ go run ./ -help
+$ go run ./
 ```
 
 This project was submitted to <a href="https://roadmap.sh/projects/number-guessing-game">roadmap.sh</a>
